@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Skills - Patrick Curit</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .l-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .skills__title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .skills__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the skills horizontally */
+        }
+
+        .skills__item {
+            margin: 0 10px 10px 0;
+        }
+
+        .project__image {
+            display: flex;
+            justify-content: space-between; /* Spread images left to right */
+            margin-top: 20px; /* Add space between skills and images */
+        }
+
+        .project__image img {
+            width: 2in; /* Set the width to 2 inches */
+            height: auto;
+            margin-right: 10px; /* Add space between images */
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">EXILE SPORTS</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="l-main bd-grid">
+        <div class="skills">
+            <h6 class="skills__title anime-text">My Skills</h6>
+
+            <div class="skills__list">
+                <!-- Replace the content below with your actual skills -->
+                <div class="skills__item anime-text">
+                    <ion-icon name="logo-html5"></ion-icon>
+                    <span>HTML</span>
+                </div>
+                <div class="skills__item anime-text">
+                    <ion-icon name="logo-css3"></ion-icon>
+                    <span>CSS</span>
+                </div>
+                <div class="skills__item anime-text">
+                    <ion-icon name="logo-javascript"></ion-icon>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skills__item anime-text">
+                    <ion-icon name="logo-vb">VB</ion-icon>
+                    <span>Visual Basic</span>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+
+        <!-- Add the sample project images here -->
+        <div class="project__image">
+            <img src="assets/img/1st.png" alt="Sample Project Image">
+            <img src="assets/img/login.png" alt="Sample Project Image">
+            <img src="assets/img/pos.png" alt="Sample Project image">
+            <img src="assets/img/Q.png" alt="Sample Project Image">
+        </div>
+    </main>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <!-- MAIN -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
